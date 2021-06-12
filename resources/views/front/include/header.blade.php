@@ -44,8 +44,8 @@
                         @foreach ( App\Category::with('childs')->where('parent_id',0)->get() as $item )
                             @if ($item->childs->count()>0)
                             <li class="nav-link p-menu"><a href="/" class="">{{ $item->category_name }} <i class="fas fa-angle-down"></i></a>
-                                <div class="c-menu position-absolute d-none bg-white shadow rounded border-top border-warning">
-                                    <ul class="nav">
+                                <div class="c-menu position-absolute d-none">
+                                    <ul class="nav bg-white shadow border-top border-warning">
                                         @foreach ( $item->childs as $child )
                                             <li class="nav-link">{{ $child->category_name }}</li>
                                         @endforeach

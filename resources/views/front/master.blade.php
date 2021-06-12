@@ -9,10 +9,11 @@
     <meta name="msnbot" content="index,follow" />
     <meta name="robots" content="index,follow" />
     <meta name="googlebot" content="all" />
-    <meta property="fb:app_id" content="345891736236545" />
+    <meta property="fb:app_id" content="" />
     @yield('meta')
-    {{-- <link rel="icon" href="{{asset('/')}}front/images/tab.png"> --}}
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="{{ asset("/") }}front/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" type="text/css">
     @yield('css')
@@ -58,6 +59,7 @@
                 </form>
             </div>
         </div>
+    </div>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>

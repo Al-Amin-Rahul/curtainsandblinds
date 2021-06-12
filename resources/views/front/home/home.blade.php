@@ -8,7 +8,10 @@
 @endsection
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('front/css/owl.carousel.min.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Blue-Slider CSS -->
+<link rel="stylesheet" href="{{ asset('front/blue-slider/css/blue.min.css') }}">
+<link rel="stylesheet" href="{{ asset('front/blue-slider/css/fontello.css') }}">
 @endsection
 
 @section('body')
@@ -121,7 +124,27 @@
         </div>
     </div>
 </section>
+{{-- Image and Video Slider  --}}
 <section class="pt-5 pb-5">
+    <div class="container">
+        <div class="alert bg-white shadow font-weight-bold">Gallery</div>
+        <div class="slider-container first-sample">
+            <div class="slider">
+              <div class="item"><img src="{{ asset('/front/images/curtain.jpeg') }}" alt=""></div>
+              <div class="item"><img src="{{ asset('/front/images/curtain2.jpg') }}" alt=""></div>
+              <div class="item"><img src="{{ asset('/front/images/curtain.jpeg') }}" alt=""></div>
+              <div class="item"><img src="{{ asset('/front/images/curtain2.jpg') }}" alt=""></div>
+              <div class="item"><img src="{{ asset('/front/images/curtain.jpeg') }}" alt=""></div>
+              <div class="item"><img src="{{ asset('/front/images/curtain2.jpg') }}" alt=""></div>
+              <div class="item"><img src="{{ asset('/front/images/curtain.jpeg') }}" alt=""></div>
+            </div>
+            <i class="left-open-big-icon prev-slide"></i>
+            <i class="right-open-big-icon next-slide"></i>
+          </div>
+    </div>
+</section>
+{{-- product slider  --}}
+<section class="pb-5">
     <div class="container">
         <div class="alert bg-white shadow font-weight-bold">Curtains</div>
         <div class="owl-carousel cp shadow rounded bg-white p-3">
@@ -181,13 +204,15 @@
 </section>
 @endsection
 @section('js')
-<script src="{{ asset('front/js/owl.carousel.min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
 <script>
     $(document).ready(function(){
         $("img").lazyload();
     });
 </script>
+<!-- Blue-Slider JS -->
+<script src="{{ asset('front/blue-slider/js/blue-slider.js') }}"></script>
 <script>
     var owl = $('.owl-carousel.curtains');
     owl.owlCarousel({
@@ -268,7 +293,6 @@
             },
             1000: {
                 items: 4,
-                loop: true
             },
         }
 
@@ -297,10 +321,42 @@
             },
             1000: {
                 items: 3,
-                loop: true
             },
         }
 
     });
+</script>
+<script>
+    $(document).ready(function(){
+	$(document).ready(function() {
+  $('.first-sample .slider').blue_slider({
+    // slide_template: '1fr 2fr 1fr',
+    // slide_template: '1fr 1fr',
+    // slide_template: '1fr',
+    slide_template: '1fr 4fr (2,1fr) .5fr',
+    current_fr_index: 2,
+    current_fr_index_flow: false,
+    // speed: 500,
+    // ease_function: 'cubic-bezier(.32,.38,.16,.98)',
+    // slide_step: 1,
+    current_fr_class: 'my-fr-current',
+    active_fr_class: 'my-fr-active',
+    custom_fr_class: '       fr-1         fr-2        fr-3    ',
+    // left_padding: 100,
+    // right_padding: 100,
+    slide_gap: 10,
+    // speed: 1000,
+    ease_function: 'ease-in-out',
+    sencitive_drag: 100,
+    loop: false,
+    auto_play: true,
+    auto_play_period: 5000,
+    start_slide_index: 0,
+    arrows: true,
+    prev_arrow: '.first-sample .prev-slide',
+    next_arrow: '.first-sample .next-slide',
+  });
+});
+});
 </script>
 @endsection

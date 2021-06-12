@@ -2,7 +2,7 @@
 <a id="showCartOpenBtn">
     <section class="cart-view bg-white shadow rounded {{ $btnClass }}" id="main">
         <div class="icon text-center  p-3">
-        <span><i class="fas fa-shopping-cart fa-2x c-green"></i></span>
+        <span><i class="fas fa-shopping-cart fa-2x text-dark"></i></span>
         </div>
         <div class="bg-green text-center text-dark font-weight-bold">{{ Cart::count() }} Items</div>
     </section>
@@ -70,7 +70,7 @@
             </div>
         </div>
         @else
-        <div class="alert alert-danger">
+        <div class="alert alert-warning">
             Cart is Empty ! Add Some Products First
         </div>
         @endif

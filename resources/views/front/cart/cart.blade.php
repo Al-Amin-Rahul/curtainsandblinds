@@ -3,7 +3,7 @@
 <a id="cartOpenBtn">
     <section class="cart-view bg-white shadow rounded-pill d-flex" id="main">
         <div class="icon text-center p-3">
-            <span><i class="fas fa-shopping-cart fa-2x c-green"></i></span>
+            <span><i class="fas fa-shopping-cart fa-2x text-dark"></i></span>
         </div>
         <div class="bg-pink-g text-center text-dark font-weight-bold rounded-pill px-3">{{ Cart::count() }} <br>Items</div>
     </section>
@@ -69,7 +69,7 @@
             </div>
         </div>
         @else
-        <div class="alert alert-danger">
+        <div class="alert alert-warning">
             Cart is Empty ! Add Some Products First
         </div>
         @endif
