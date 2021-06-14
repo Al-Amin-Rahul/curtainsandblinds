@@ -8,7 +8,9 @@
 @endsection
 
 @section('css')
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- Blue-Slider CSS -->
 <link rel="stylesheet" href="{{ asset('front/blue-slider/css/blue.min.css') }}">
 <link rel="stylesheet" href="{{ asset('front/blue-slider/css/fontello.css') }}">
@@ -28,7 +30,8 @@
                     <div class="carousel-inner" id="carousel-inner">
                         @foreach($sliders as $slider)
                         <div class="rounded carousel-item {{$slider->active}}">
-                            <img data-original="{{asset($slider->slider_image)}}" class="border-radius-99 d-block w-100" alt="" height="">
+                            <img data-original="{{asset($slider->slider_image)}}" class="border-radius-99 d-block w-100"
+                                alt="" height="">
                         </div>
                         @endforeach
                     </div>
@@ -40,7 +43,7 @@
 <section class="curtains bg-white pt-5 pb-5">
     <div class="container">
         <div class="owl-carousel curtains shadow rounded bg-white p-3 mt-3">
-            
+
             <div class="item border-right">
                 <a href=""><i class="fas fa-tools"></i> Blackout Curtains</a>
             </div>
@@ -53,14 +56,14 @@
             <div class="item border-right">
                 <a href=""><i class="fas fa-tools"></i> Outdoor Curtains</a>
             </div>
-            
+
         </div>
     </div>
 </section>
 <section class="blinds bg-white pb-5">
     <div class="container">
         <div class="owl-carousel blinds shadow rounded bg-white p-3">
-            
+
             <div class="item border-right">
                 <a href=""><i class="fas fa-tools"></i> Roller Blinds</a>
             </div>
@@ -73,7 +76,7 @@
             <div class="item border-right">
                 <a href=""><i class="fas fa-tools"></i> Roman Blinds</a>
             </div>
-            
+
         </div>
     </div>
 </section>
@@ -130,56 +133,160 @@
         <div class="alert bg-white shadow font-weight-bold">Gallery</div>
         <div class="slider-container first-sample">
             <div class="slider">
-              <div class="item"><img src="{{ asset('/front/images/curtain.jpeg') }}" alt=""></div>
-              <div class="item"><img src="{{ asset('/front/images/curtain2.jpg') }}" alt=""></div>
-              <div class="item"><img src="{{ asset('/front/images/curtain.jpeg') }}" alt=""></div>
-              <div class="item"><img src="{{ asset('/front/images/curtain2.jpg') }}" alt=""></div>
-              <div class="item"><img src="{{ asset('/front/images/curtain.jpeg') }}" alt=""></div>
-              <div class="item"><img src="{{ asset('/front/images/curtain2.jpg') }}" alt=""></div>
-              <div class="item"><img src="{{ asset('/front/images/curtain.jpeg') }}" alt=""></div>
+                <div class="item">
+                    <img src="{{ asset('/front/images/curtain.jpeg') }}" alt="">
+                    <div class="gallery-img-overlay position-absolute px-3 text-justify">
+                        <div class="des pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, odio? Illum dolor impedit eos repellat labore qui aliquid quo doloribus.</div>
+                        <div class="read-more text-right pb-2">
+                            <a href="" class="btn btn-warning d-inline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('/front/images/curtain2.jpg') }}" alt="">
+                    <div class="gallery-img-overlay position-absolute px-3 text-justify">
+                        <div class="des pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, odio? Illum dolor impedit eos repellat labore qui aliquid quo doloribus.</div>
+                        <div class="read-more text-right pb-2">
+                            <a href="" class="btn btn-warning d-inline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('/front/images/curtain.jpeg') }}" alt="">
+                    <div class="gallery-img-overlay position-absolute px-3 text-justify">
+                        <div class="des pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, odio? Illum dolor impedit eos repellat labore qui aliquid quo doloribus.</div>
+                        <div class="read-more text-right pb-2">
+                            <a href="" class="btn btn-warning d-inline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('/front/images/curtain2.jpg') }}" alt="">
+                    <div class="gallery-img-overlay position-absolute px-3 text-justify">
+                        <div class="des pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, odio? Illum dolor impedit eos repellat labore qui aliquid quo doloribus.</div>
+                        <div class="read-more text-right pb-2">
+                            <a href="" class="btn btn-warning d-inline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('/front/images/curtain.jpeg') }}" alt="">
+                    <div class="gallery-img-overlay position-absolute px-3 text-justify">
+                        <div class="des pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, odio? Illum dolor impedit eos repellat labore qui aliquid quo doloribus.</div>
+                        <div class="read-more text-right pb-2">
+                            <a href="" class="btn btn-warning d-inline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('/front/images/curtain2.jpg') }}" alt="">
+                    <div class="gallery-img-overlay position-absolute px-3 text-justify">
+                        <div class="des pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, odio? Illum dolor impedit eos repellat labore qui aliquid quo doloribus.</div>
+                        <div class="read-more text-right pb-2">
+                            <a href="" class="btn btn-warning d-inline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ asset('/front/images/curtain.jpeg') }}" alt="">
+                    <div class="gallery-img-overlay position-absolute px-3 text-justify">
+                        <div class="des pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, odio? Illum dolor impedit eos repellat labore qui aliquid quo doloribus.</div>
+                        <div class="read-more text-right pb-2">
+                            <a href="" class="btn btn-warning d-inline">Read More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <i class="left-open-big-icon prev-slide"></i>
             <i class="right-open-big-icon next-slide"></i>
-          </div>
+        </div>
     </div>
 </section>
-{{-- product slider  --}}
+{{-- product  --}}
 <section class="pb-5">
     <div class="container">
-        <div class="alert bg-white shadow font-weight-bold">Curtains</div>
-        <div class="owl-carousel cp shadow rounded bg-white p-3">
-            
-            <div class="item">
-                <a href="">
-                    <div class="image"><img src="{{ asset('/front/images/curtain.jpeg') }}" alt=""></div>
-                    <div class="title text-overflow">Cotton Made Curtains For Home Export Quality</div>
-                </a>
+        <div class="alert bg-white shadow font-weight-bold">Product</div>
+        <div class="row">
+            <div class="col-lg-3 pb-5">
+                <div class="shadow rounded bg-white">
+                    <a href="">
+                        <div class="image">
+                            <img src="{{ asset('/front/images/curtain.jpeg') }}" class="img-fluid" alt="">
+                        </div>
+                        <div class="title px-3 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, natus.</div>
+                    </a>
+                </div>
             </div>
-            <div class="item">
-                <a href="">
-                    <div class="image"><img src="{{ asset('/front/images/curtain.jpeg') }}" alt=""></div>
-                    <div class="title text-overflow">Cotton Made Curtains For Home Export Quality</div>
-                </a>
+            <div class="col-lg-3 pb-5">
+                <div class="shadow rounded bg-white">
+                    <a href="">
+                        <div class="image">
+                            <img src="{{ asset('/front/images/curtain.jpeg') }}" class="img-fluid" alt="">
+                        </div>
+                        <div class="title px-3 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, natus.</div>
+                    </a>
+                </div>
             </div>
-            <div class="item">
-                <a href="">
-                    <div class="image"><img src="{{ asset('/front/images/curtain.jpeg') }}" alt=""></div>
-                    <div class="title text-overflow">Cotton Made Curtains For Home Export Quality</div>
-                </a>
+            <div class="col-lg-3 pb-5">
+                <div class="shadow rounded bg-white">
+                    <a href="">
+                        <div class="image">
+                            <img src="{{ asset('/front/images/curtain.jpeg') }}" class="img-fluid" alt="">
+                        </div>
+                        <div class="title px-3 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, natus.</div>
+                    </a>
+                </div>
             </div>
-            <div class="item">
-                <a href="">
-                    <div class="image"><img src="{{ asset('/front/images/curtain.jpeg') }}" alt=""></div>
-                    <div class="title text-overflow">Cotton Made Curtains For Home Export Quality</div>
-                </a>
+            <div class="col-lg-3 pb-5">
+                <div class="shadow rounded bg-white">
+                    <a href="">
+                        <div class="image">
+                            <img src="{{ asset('/front/images/curtain.jpeg') }}" class="img-fluid" alt="">
+                        </div>
+                        <div class="title px-3 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, natus.</div>
+                    </a>
+                </div>
             </div>
-            <div class="item">
-                <a href="">
-                    <div class="image"><img src="{{ asset('/front/images/curtain.jpeg') }}" alt=""></div>
-                    <div class="title text-overflow">Cotton Made Curtains For Home Export Quality</div>
-                </a>
+            <div class="col-lg-3 pb-5">
+                <div class="shadow rounded bg-white">
+                    <a href="">
+                        <div class="image">
+                            <img src="{{ asset('/front/images/curtain.jpeg') }}" class="img-fluid" alt="">
+                        </div>
+                        <div class="title px-3 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, natus.</div>
+                    </a>
+                </div>
             </div>
-            
+            <div class="col-lg-3 pb-5">
+                <div class="shadow rounded bg-white">
+                    <a href="">
+                        <div class="image">
+                            <img src="{{ asset('/front/images/curtain.jpeg') }}" class="img-fluid" alt="">
+                        </div>
+                        <div class="title px-3 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, natus.</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 pb-5">
+                <div class="shadow rounded bg-white">
+                    <a href="">
+                        <div class="image">
+                            <img src="{{ asset('/front/images/curtain.jpeg') }}" class="img-fluid" alt="">
+                        </div>
+                        <div class="title px-3 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, natus.</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 pb-5">
+                <div class="shadow rounded bg-white">
+                    <a href="">
+                        <div class="image">
+                            <img src="{{ asset('/front/images/curtain.jpeg') }}" class="img-fluid" alt="">
+                        </div>
+                        <div class="title px-3 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, natus.</div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -202,14 +309,18 @@
         </div>
     </div>
 </section>
+@include('front.include.footer-top')
 @endsection
 @section('js')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $("img").lazyload();
     });
+
 </script>
 <!-- Blue-Slider JS -->
 <script src="{{ asset('front/blue-slider/js/blue-slider.js') }}"></script>
@@ -241,6 +352,7 @@
         }
 
     });
+
 </script>
 <script>
     var owl = $('.owl-carousel.blinds');
@@ -255,7 +367,7 @@
         nav: false,
         dots: false,
         responsiveClass: true,
-        rtl:true,
+        rtl: true,
 
         responsive: {
             0: {
@@ -271,32 +383,7 @@
         }
 
     });
-</script>
-<script>
-    var owl = $('.owl-carousel.cp');
-    owl.owlCarousel({
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        autoHeight: false,
-        autoHeightClass: 'owl-height',
-        responsiveClass: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 2,
-            },
-            768: {
-                items: 3,
-            },
-            1000: {
-                items: 4,
-            },
-        }
 
-    });
 </script>
 <script>
     var owl = $('.owl-carousel');
@@ -325,38 +412,31 @@
         }
 
     });
+
 </script>
 <script>
-    $(document).ready(function(){
-	$(document).ready(function() {
-  $('.first-sample .slider').blue_slider({
-    // slide_template: '1fr 2fr 1fr',
-    // slide_template: '1fr 1fr',
-    // slide_template: '1fr',
-    slide_template: '1fr 4fr (2,1fr) .5fr',
-    current_fr_index: 2,
-    current_fr_index_flow: false,
-    // speed: 500,
-    // ease_function: 'cubic-bezier(.32,.38,.16,.98)',
-    // slide_step: 1,
-    current_fr_class: 'my-fr-current',
-    active_fr_class: 'my-fr-active',
-    custom_fr_class: '       fr-1         fr-2        fr-3    ',
-    // left_padding: 100,
-    // right_padding: 100,
-    slide_gap: 10,
-    // speed: 1000,
-    ease_function: 'ease-in-out',
-    sencitive_drag: 100,
-    loop: false,
-    auto_play: true,
-    auto_play_period: 5000,
-    start_slide_index: 0,
-    arrows: true,
-    prev_arrow: '.first-sample .prev-slide',
-    next_arrow: '.first-sample .next-slide',
-  });
-});
-});
+    $(document).ready(function () {
+        $(document).ready(function () {
+            $('.first-sample .slider').blue_slider({
+                slide_template: '1fr 4fr (2,1fr) .5fr',
+                current_fr_index: 2,
+                current_fr_index_flow: false,
+                current_fr_class: 'my-fr-current',
+                active_fr_class: 'my-fr-active',
+                custom_fr_class: '       fr-1         fr-2        fr-3    ',
+                slide_gap: 10,
+                ease_function: 'ease-in-out',
+                sencitive_drag: 100,
+                loop: true,
+                auto_play: true,
+                auto_play_period: 4000,
+                start_slide_index: 0,
+                arrows: true,
+                prev_arrow: '.first-sample .prev-slide',
+                next_arrow: '.first-sample .next-slide',
+            });
+        });
+    });
+
 </script>
 @endsection

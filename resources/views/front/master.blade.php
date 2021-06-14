@@ -31,7 +31,6 @@
     @include('front.include.footer')
     @include('front.cart.cart')
     @include('front.include.sticky-menu')
-    @include('front.include.sidebar')
     <!-- goto top button  -->
     <a id="gotoTop"><i class="fas fa-angle-up c-pink font-weight-bold"></i></a>
 
